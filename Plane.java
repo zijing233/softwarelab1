@@ -37,14 +37,14 @@ public Plane(Image img,double x,double y) {
 	this.img = img;
 	this.x = x;
 	this.y = y;
-	this.speed = 6;
+	this.speed = 101;
 	this.width = img.getWidth(null);
 	this.height = img.getHeight(null);
 			
 
 	
 }
-//°´ÏÂÄ³¸ö¼ü£¬Ôö¼ÓÏàÓ¦µÄ·½Ïò
+//æŒ‰ä¸‹æŸä¸ªé”®ï¼Œå¢åŠ ç›¸åº”çš„æ–¹å‘
 public void addDirection(KeyEvent e ) {
 	switch (e.getKeyCode()) {
 	case KeyEvent.VK_LEFT:
@@ -63,7 +63,7 @@ public void addDirection(KeyEvent e ) {
 	 
 }
 
-//°´ÏÂÄ³¸ö¼ü£¬È¡ÏûÏàÓ¦µÄ·½Ïò
+//æŒ‰ä¸‹æŸä¸ªé”®ï¼Œå–æ¶ˆç›¸åº”çš„æ–¹å‘
 public void minusDirection(KeyEvent e ) {
 	switch (e.getKeyCode()) {
 	case KeyEvent.VK_LEFT:
